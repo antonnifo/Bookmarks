@@ -29,6 +29,9 @@ account <a href="{% url "register" %}">register here</a></p>
             <a href="{% url "social:begin" "facebook" %}">Sign in with
             Facebook</a>
             </li>
+            <li class="twitter">
+                <a href="{% url "social:begin" "twitter" %}">Login with Twitter</a>
+            </li>
         </ul>
     </div>
 {% endblock %}

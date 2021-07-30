@@ -112,6 +112,7 @@ AUTHENTICATION_BACKENDS = [
                         'django.contrib.auth.backends.ModelBackend',
                         'account.authentication.EmailAuthBackend',
                         'social_core.backends.facebook.FacebookOAuth2',
+                        'social_core.backends.twitter.TwitterOAuth',
 ]
 
 # Internationalization
@@ -152,3 +153,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 SOCIAL_AUTH_FACEBOOK_KEY = os.getenv('FACEBOOK_KEY') 
 SOCIAL_AUTH_FACEBOOK_SECRET = os.getenv('FACEBOOK_SECRET')
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+
+SOCIAL_AUTH_TWITTER_KEY = os.getenv('TWITTER_KEY')
+SOCIAL_AUTH_TWITTER_SECRET = os.getenv('TWITTER_SECRET')
